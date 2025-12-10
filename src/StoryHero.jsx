@@ -5,7 +5,16 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+// ===== IMPORT SWIPER IMAGES =====
+import swiper1 from './src/assets/swiper/swiper1.webp';
+import swiper2 from './src/assets/swiper/swiper2.webp';
+import swiper3 from './src/assets/swiper/swiper3.webp';
+import swiper4 from './src/assets/swiper/swiper4.webp';
+import swiper5 from './src/assets/swiper/swiper5.webp';
+
 export default function StoryHero() {
+  const slides = [swiper1, swiper2, swiper3, swiper4, swiper5];
+
   return (
     <div className='w-full h-[45vh] md:h-[60vh] lg:h-[70vh]'>
       <Swiper
@@ -19,50 +28,18 @@ export default function StoryHero() {
           '--swiper-pagination-color': '#D9C6A3'
         }}
       >
-        <SwiperSlide style={{
-          color: 'white',
-          cursor: 'grabbing',
-          backgroundSize: 'cover',
-          backgroundImage: 'url(./src/assets/swiper/swiper1.webp)',
-          backgroundPosition: 'center'
-        }}>
-
-        </SwiperSlide>
-        <SwiperSlide style={{
-          color: 'white',
-          cursor: 'grabbing',
-          backgroundSize: 'cover',
-          backgroundImage: 'url(./src/assets/swiper/swiper2.webp)',
-          backgroundPosition: 'center'
-        }}>
-
-        </SwiperSlide>
-        <SwiperSlide style={{
-          color: 'white',
-          cursor: 'grabbing',
-          backgroundSize: 'cover',
-          backgroundImage: 'url(./src/assets/swiper/swiper3.webp)',
-          backgroundPosition: 'center'
-        }}>
-
-        </SwiperSlide>
-        <SwiperSlide style={{
-          color: 'white',
-          cursor: 'grabbing',
-          backgroundSize: 'cover',
-          backgroundImage: 'url(./src/assets/swiper/swiper4.webp)',
-          backgroundPosition: 'center'
-        }}>
-
-        </SwiperSlide>
-        <SwiperSlide style={{
-          color: 'white',
-          cursor: 'grabbing',
-          backgroundSize: 'cover',
-          backgroundImage: 'url(./src/assets/swiper/swiper5.webp)',
-          backgroundPosition: 'center'
-        }}>
-        </SwiperSlide>
+        {slides.map((slide, index) => (
+          <SwiperSlide
+            key={index}
+            style={{
+              color: 'white',
+              cursor: 'grabbing',
+              backgroundSize: 'cover',
+              backgroundImage: `url(${slide})`,
+              backgroundPosition: 'center'
+            }}
+          />
+        ))}
       </Swiper>
     </div>
   );

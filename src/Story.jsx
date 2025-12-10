@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import StoryHero from './StoryHero.jsx';
 
+// ===== IMPORT ABOUT IMAGES =====
+import cheese from './src/assets/about/cheese.webp';
+import spices from './src/assets/about/spices.webp';
+import chef from './src/assets/about/chef.webp';
+import restaurant from './src/assets/about/restaurant.webp';
+
 export default function About() {
   const [isVisible, setIsVisible] = useState({});
   const observerRefs = useRef({});
@@ -52,7 +58,7 @@ export default function About() {
               className="order-2 md:order-1 overflow-hidden"
             >
               <img
-                src="./src/assets/about/cheese.webp"
+                src={cheese}
                 alt="Historic European dining room"
                 className="w-full h-[500px] md:h-[600px] object-cover grayscale"
               />
@@ -118,7 +124,7 @@ export default function About() {
               className="overflow-hidden"
             >
               <img
-                src="./src/assets/about/spices.webp"
+                src={spices}
                 alt="Spices and herbs"
                 className="w-full h-[500px] md:h-[600px] object-cover"
               />
@@ -128,7 +134,6 @@ export default function About() {
 
         <section className="max-w-7xl mx-auto px-6 py-24 md:py-32 lg:py-40">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {/* Chef Portrait */}
             <div
               ref={el => observerRefs.current['chef-img'] = el}
               style={fadeScaleVariant(isVisible['chef-img'])}
@@ -136,7 +141,7 @@ export default function About() {
             >
               <div className="overflow-hidden bg-stone-200">
                 <img
-                  src="./src/assets/about/chef.webp"
+                  src={chef}
                   alt="Chef Elena Rosselli"
                   className="w-full h-[600px] md:h-[700px] object-cover"
                 />
@@ -158,7 +163,7 @@ export default function About() {
             >
               <div className="overflow-hidden bg-stone-200">
                 <img
-                  src="./src/assets/about/restaurant.webp"
+                  src={restaurant}
                   alt="Intimate table setting"
                   className="w-full h-[600px] md:h-[700px] object-cover"
                 />
@@ -190,4 +195,4 @@ export default function About() {
       </div>
     </>
   );
-};
+}
