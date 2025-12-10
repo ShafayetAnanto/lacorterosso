@@ -1,49 +1,44 @@
 
----
+![laCorteRosso](https://github.com/user-attachments/assets/251e5b5d-d671-4fea-86c8-9696f47fec32)
 
-![descriptaAi](https://github.com/user-attachments/assets/b98dbb5f-150f-4e43-af88-11f88b6b1fea)
 
-# ✨ DescriptaAI — AI-Powered Product Description Generator  
-DescriptaAI is an intelligent description generator that uses the Gemini API to craft polished, unique product descriptions in seconds. Perfect for e-commerce owners, marketers, and creators who need high-quality copy fast.
-
-The app offers three tone options, strict rate-limiting, smart error handling, and a smooth user experience.
+# 🍷 La Corte Rosso — European Fine Dining Restaurant Website  
+La Corte Rosso is an elegant, visually immersive fine-dining restaurant website built with refined design principles. It captures the look and feel of a luxurious European restaurant, blending smooth UI transitions with high-quality imagery and thoughtful layout.
 
 ---
 
 ## ✨ Features
 
-### 📝 **Multi-Input Form**
-Provide:
-- Product Name  
-- Product Features  
-- Target Audience  
+### 🖥️ **Multi-Page Layout**
+Includes:
+- Home  
+- Menu  
+- Gallery  
+- Story  
+- Contact  
+- Reserve  
 
-Everything is validated for accuracy before generating.
+### 🍽️ **36-Item Menu**
+Each menu item features:
+- Image generated using Google Nano Banana  
+- Name, category, details  
 
-### 🎭 **Tone Selection**
-Choose from:
-- **Professional**
-- **Casual**
-- **SEO-Friendly**
+The menu supports smooth browsing and a refined presentation.
 
-### 🤖 **AI Output**
-Receive **three different descriptions** instantly. Each version is styled based on your chosen tone.
+### 🖼️ **Premium Visuals**
+The gallery showcases:
+- Restaurant interior photography  
+- Kitchen and ambience shots  
+All visuals are high-quality and curated for a luxury feel.
 
-### 📋 **Copy to Clipboard**
-Each output includes a one-click copy button for quick usage.
+### 🎞️ **Home Page Slideshow Animation**
+The homepage includes a large, animated slideshow featuring atmospheric visuals for an immersive experience.
 
-### 🧠 **Advanced Error Handling**
-Handles:
-- Missing fields  
-- API errors  
-- Network issues  
-- Invalid responses  
-- Overuse limits  
-
-### ⏳ **Rate Limiting Included**
-- **3 generations per hour**
-- **30-second cooldown** between each search  
-Users are notified with clear messages when limits apply.
+### 🎨 **Design System**
+- Premium, European-inspired color palette  
+- Balanced typography  
+- Smooth transitions  
+- Responsive layout on all screen sizes  
 
 ---
 
@@ -51,16 +46,15 @@ Users are notified with clear messages when limits apply.
 
 ### **Frontend**
 - React  
-- Custom UI components  
-- Tailwind
+- React Router  
+- Tailwind CSS
 
-### **AI**
-- Gemini API  
+### **Media**
+- Google Nano Banana image generation  
 
-### **Logic**
-- Custom rate-limiting mechanism  
-- Clipboard API  
-- State management with React Hooks  
+### **Other**
+- Custom animations  
+- Reusable components  
 
 ---
 
@@ -68,4 +62,3 @@ Users are notified with clear messages when limits apply.
 ```bash
 npm install
 npm run dev
-
